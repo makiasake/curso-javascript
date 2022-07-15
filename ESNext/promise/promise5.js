@@ -1,7 +1,7 @@
 function funcionarioOuNao(valor, chanceErro) {
     return new Promise((resolve, reject) => {
         try {
-            consol.log()
+            consol.log() 
             if (Math.random() < chanceErro) {
                 reject('Ocorreu um erro')
             } else {
