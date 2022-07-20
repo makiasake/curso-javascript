@@ -1,0 +1,60 @@
+<table>
+    <caption>Produtos</caption>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Agua</td>
+            <td>2,00</td>
+            <td>2</td>
+            <td>4,00</td>
+        </tr>
+        <tr>
+            <td>Café</td>
+            <td>4,00</td>
+            <td>2</td>
+            <td>8,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <!-- <td colspan="3" rowspan="2">Total</td> -->
+            <td colspan="3">Total</td>
+            <td>12,00</td>
+        </tr>
+        <!-- <tr><td>teste</td></tr> -->
+    </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    /* em th ou td */
+    th, td {
+        padding: 10px;
+    }
+
+    /* nos trs que estiverem dentro de thead */
+    thead tr {
+        border-bottom: solid 3px #444;
+    }
+
+    /* no tr dentro de tbody quando o cursor estiver em cima */
+    tbody tr:hover {
+        background-color: #dedede;
+    }
+
+    tfoot {
+        background-color: #444;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
