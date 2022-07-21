@@ -1,6 +1,50 @@
 <h1>Formulario</h1>
 
+<!-- Um get mandaria os parametros do formulario na url -->
 <form action="http://localhost:3003/usuarios" method="POST">
+    <input type="hidden" name="id" value="">
     <input type="text" name="nome">
+    <input type="password" name="senha">
+    <textarea name="bio" cols="30" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value="ADMIN"> Admin
+        <input type="radio" name="tipo" value="USER"> User
+    </div>
+    <div>
+        <input type="checkbox" name=""> Ativo
+    </div>
+
+    <select name="estado">
+        <option value="">Selecione</option>
+        <option value="SP">SP</option>
+        <option value="PE">PE</option>
+        <option value="RJ">RJ</option>
+    </select>
+
+    <select name="interesses" multiple size="5">
+        <option value="java">Java</option>
+        <option value="js">Javascript</option>
+        <option value="ruby">Ruby</option>
+        <option value="python">Python</option>
+        <option value="c">C</option>
+        <option value="go">Go</option>
+        <option value="C#">C#</option>
+    </select>
+
     <button>Salvar</button>
+    <!-- <button formaction="http://localhost:3003/usuarios">Salvar</button> deste modo retirar a action do form -->
 </form>
+
+<style>
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+        display: inline;
+    }
+</style>
