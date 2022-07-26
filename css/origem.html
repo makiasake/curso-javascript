@@ -1,3 +1,5 @@
+<!-- Esse arquivo tem 3 alterações no css, o inline é que tem mais prioridade
+do restante (stylesheet ou style) é aplicado o ultimo que foi processado -->
 <!DOCTYPE html>
 <html>
 
@@ -5,11 +7,14 @@
     <meta charset="UTF-8">
     <title>Origem CSS: Externo, Interno e Inline</title>
     <style>
-        /* ... */
+        body {
+            background-color: aquamarine;
+        }
     </style>
+    <link rel="stylesheet" href="css/externo.css">
 </head>
 
-<body>
+<body style="background-color: coral;">
     <h1>E agora?</h1>
 </body>
 
