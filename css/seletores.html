@@ -6,7 +6,64 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* * { seletor universal (todo mundo)
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* .tag { seletor de classe 
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* seletor de id */
+        /* #aprovados {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* Pega o elemento div que esteja diretamente dentro do id aninhado */
+        /* #aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* Pega qualquer elemento session dentro de alinhado */
+        /* #aninhado section {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* Pega o elemento ul adjacente a p (ou seja ul diretamente depois de p)/
+        p + ul {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* Pega uma ol irmã*/
+        /* p ~ ol {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* seletor por propriedade  */
+        /* [feira] {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* seletor por propriedade associada a valor */
+        /* [feira=casa] {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* seletor por propriedade associada a possiveis valores
+        * [feira*=sa] tem esse valor. like
+        */
+        /* [feira~=escritorio] {
+            color: #ff0;
+            background-color: #f77;
+        } */
+        /* seletor por filho do tipo*/
+        /* primeiro span que é filho de alguem span:nth-child(1) */
+        /* section > :nth-child(odd) todos os filhos impares dentro de uma session */
+        /* section > :nth-child(odd), ul todos os filhos impares dentro de uma session e para uls */
+        section > :nth-child(odd) {
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
